@@ -1,0 +1,14 @@
+{
+  "name": "nilays",
+  "version": "1.0.0",
+  "description": "credit card masking program",
+  "main": "mask.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "nilay shrimanwar",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^24.9.0"
+  }
+}

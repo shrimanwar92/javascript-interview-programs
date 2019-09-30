@@ -1,9 +1,6 @@
-beforeEach(() => {
-  jest.resetModules();
-});
+const chunk = require('./main');
 
 test('chunk divides an array of 10 elements with chunk size 2', () => {
-  const chunk = require('./main');
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
   const chunked = chunk(arr, 2);
 
@@ -11,7 +8,6 @@ test('chunk divides an array of 10 elements with chunk size 2', () => {
 });
 
 test('chunk divides an array of 3 elements with chunk size 1', () => {
-  const chunk = require('./main');
   const arr = [1, 2, 3];
   const chunked = chunk(arr, 1);
 
@@ -19,7 +15,6 @@ test('chunk divides an array of 3 elements with chunk size 1', () => {
 });
 
 test('chunk divides an array of 13 elements with chunk size 5', () => {
-  const chunk = require('./main');
   const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
   const chunked = chunk(arr, 5);
 
